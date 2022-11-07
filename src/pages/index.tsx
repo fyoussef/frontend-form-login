@@ -30,6 +30,7 @@ export default function Home() {
       <Flex
         justify='center'
         flexDir='column'
+        px={4}
       >
         <Box>
           <Text 
