@@ -20,9 +20,6 @@ export default function Home() {
       color='white'
       align='center'
       justify='center'
-      w={{
-        'sm': '100%'
-      }}
     >
       <Head>
         <title>Create Next App</title>
@@ -34,9 +31,7 @@ export default function Home() {
         justify='center'
         flexDir='column'
       >
-        <Box
-          w={465}
-        >
+        <Box>
           <Text 
             fontWeight='bold'
             fontSize='3xl'
