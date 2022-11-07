@@ -10,7 +10,7 @@ import {
   Input,
   Link
 } from '@chakra-ui/react'
-import { FaGoogle, FaRegEnvelope, FaLock } from 'react-icons/fa'
+import { FaGoogle, FaUser, FaLock } from 'react-icons/fa'
 
 export default function Home() {
   return (
@@ -69,7 +69,7 @@ export default function Home() {
           <InputLeftElement
             pointerEvents='none'
             // eslint-disable-next-line react/no-children-prop
-            children={<FaRegEnvelope />}
+            children={<FaUser />}
           />
           <Input 
             type='text' 
