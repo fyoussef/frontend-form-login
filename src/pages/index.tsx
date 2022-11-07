@@ -139,7 +139,7 @@ export default function Home() {
             }}
             ml='1'
           >
-            <Link>
+            <Link href='/cadastro'>
               Cadastre-se
             </Link>
           </Text>
