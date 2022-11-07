@@ -120,7 +120,7 @@ export default function Home() {
         </Text>
 
         <Button 
-          colorScheme='blackAlpha' 
+          colorScheme='messenger'
           mt='4'
         >
           Login
