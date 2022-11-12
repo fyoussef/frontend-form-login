@@ -11,6 +11,7 @@ import {
   Link
 } from '@chakra-ui/react'
 import { FaGoogle, FaUser, FaLock } from 'react-icons/fa'
+import { GoogleButton } from '../components/Buttons'
 
 export default function Home() {
   return (
@@ -43,14 +44,9 @@ export default function Home() {
             Bem-vindo de volta, informe suas credênciais para o Login
           </Text>
         </Box>
-        <Button 
-          /* colorScheme='blackAlpha'  */
-          colorScheme='red'
-          leftIcon={<FaGoogle />}
-          mt='4'
-        >
-          Login com o Google
-        </Button>
+        <GoogleButton 
+          buttonText='Login com o Google'
+        />
 
         <Flex
           align='center'

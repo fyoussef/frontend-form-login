@@ -1,8 +1,18 @@
 import { 
+  Box,
+  Button,
+  Divider,
   Flex,
+  Input,
+  InputGroup,
+  InputLeftElement,
   Text
 } from '@chakra-ui/react'
 import Head from 'next/head'
+import Link from 'next/link'
+import { FaEnvelope, FaLock, FaUser } from 'react-icons/fa'
+import { BsFillPhoneFill } from 'react-icons/bs'
+import { GoogleButton } from '../components/Buttons'
 export default function Cadastro() {
     return (
         <Flex 
@@ -24,12 +34,138 @@ export default function Cadastro() {
             flexDir='column'
             px={4}
         >
-            <Text 
-                fontWeight='bold'
-                fontSize='3xl'
+            <Box>
+                <Text 
+                    fontWeight='bold'
+                    fontSize='3xl'
+                >
+                    Cadastre-se
+                </Text>
+                <Text color='whiteAlpha.400'>
+                    Informe seus dados para se cadastrar na plataforma
+                </Text>
+            </Box>
+            <GoogleButton 
+                buttonText='Cadastre-se usando o google'
+            />
+            
+            <Flex
+                align='center'
+                justify='center'
+                gap={3}
+                mt='4'
             >
-                Cadastre-se
+                <Divider w={16} />
+                <Text>
+                    Ou
+                </Text>
+                <Divider w={16} />
+            </Flex>
+            <InputGroup mt='4'>
+                <InputLeftElement
+                    pointerEvents='none'
+                    // eslint-disable-next-line react/no-children-prop
+                    children={<FaUser />}
+                />
+                <Input 
+                    type='text' 
+                    placeholder='Usuário'
+                    borderColor='blackAlpha.500'
+                    _placeholder={{
+                    color: 'gray.400'
+                    }}
+                    _hover={{
+                    color: 'none'
+                    }}
+                    focusBorderColor='blackAlpha.500'
+                    bg='blackAlpha.500'
+                />
+            </InputGroup>
+            <InputGroup mt='4'>
+                <InputLeftElement
+                    pointerEvents='none'
+                    // eslint-disable-next-line react/no-children-prop
+                    children={<FaEnvelope />}
+                />
+                <Input 
+                    type='email' 
+                    placeholder='Email'
+                    borderColor='blackAlpha.500'
+                    _placeholder={{
+                    color: 'gray.400'
+                    }}
+                    _hover={{
+                    color: 'none'
+                    }}
+                    focusBorderColor='blackAlpha.500'
+                    bg='blackAlpha.500'
+                />
+            </InputGroup>
+            <InputGroup mt='4'>
+                <InputLeftElement
+                    pointerEvents='none'
+                    // eslint-disable-next-line react/no-children-prop
+                    children={<BsFillPhoneFill />}
+                />
+                <Input 
+                    type='tel' 
+                    placeholder='Telefone'
+                    borderColor='blackAlpha.500'
+                    _placeholder={{
+                    color: 'gray.400'
+                    }}
+                    _hover={{
+                    color: 'none'
+                    }}
+                    focusBorderColor='blackAlpha.500'
+                    bg='blackAlpha.500'
+                />
+            </InputGroup>
+            <InputGroup mt='4'>
+                <InputLeftElement
+                    pointerEvents='none'
+                    // eslint-disable-next-line react/no-children-prop
+                    children={<FaLock />}
+                />
+                <Input 
+                    type='password' 
+                    placeholder='Senha'
+                    borderColor='blackAlpha.500'
+                    _placeholder={{
+                    color: 'gray.400'
+                    }}
+                    _hover={{
+                    color: 'none'
+                    }}
+                    focusBorderColor='blackAlpha.500'
+                    bg='blackAlpha.500'
+                />
+            </InputGroup>
+            <Button 
+                colorScheme='messenger'
+                mt='8'
+            >
+                Cadastrar
+            </Button>
+            
+            <Text 
+                mt='4'
+                align='left'
+            >
+                Já possui uma conta?
+                <Text 
+                    as='u'
+                    _hover={{
+                    color: 'gray.400'
+                    }}
+                    ml='1'
+                >
+                    <Link href='/'>
+                    Login
+                    </Link>
+                </Text>
             </Text>
+
         </Flex>
 
 
