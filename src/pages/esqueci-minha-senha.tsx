@@ -8,6 +8,7 @@ import {
     Text
 } from '@chakra-ui/react'
 import Head from 'next/head'
+import Link from 'next/link'
 import { FaEnvelope } from 'react-icons/fa'
 
 export default function Cadastro() {
@@ -69,6 +70,23 @@ export default function Cadastro() {
             >
                 Recuperar senha
             </Button>
+            <Text 
+                mt='4'
+                align='left'
+            >
+                Voltar para o
+                <Text 
+                    as='u'
+                    _hover={{
+                    color: 'gray.400'
+                    }}
+                    ml='1'
+                >
+                    <Link href='/'>
+                    Login
+                    </Link>
+                </Text>
+            </Text>
 
         </Flex>
 
