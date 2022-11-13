@@ -111,7 +111,7 @@ export default function Home() {
           }}
           align='right'
         >
-          <Link>
+          <Link href='/esqueci-minha-senha'>
             Esqueci minha senha
           </Link>
         </Text>
