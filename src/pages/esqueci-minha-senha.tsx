@@ -11,7 +11,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { FaEnvelope } from 'react-icons/fa'
 
-export default function Cadastro() {
+export default function EsqueciMinhaSenha() {
     return (
         <Flex 
             bg='gray.900'
