@@ -35,7 +35,7 @@ export default function Home() {
                     align='center'
                     justify='center'
                     gap={2}
-                    mt={8}
+                    mt={16}
                 >
                     <RiMoneyPoundBoxLine fontSize={32} />
                     <Text 
