@@ -4,9 +4,6 @@ import {
     Button,
     Flex,
     Stack,
-    Tab,
-    TabList,
-    Tabs,
     Text
 } from '@chakra-ui/react'
 import Head from 'next/head'
@@ -16,6 +13,7 @@ import { FaHome, FaSignOutAlt, FaUser, FaWallet } from 'react-icons/fa'
 import { MdIncompleteCircle } from 'react-icons/md'
 import { TbArrowsDownUp } from 'react-icons/tb'
 import { AiFillSetting } from 'react-icons/ai'
+import { RiMoneyPoundBoxLine } from 'react-icons/ri'
 
 export default function Home() {
     return (
@@ -36,8 +34,22 @@ export default function Home() {
                 h='full'
                 bg='blackAlpha.400'
             >
+                <Flex 
+                    align='center'
+                    justify='center'
+                    gap={2}
+                    mt={8}
+                >
+                    <RiMoneyPoundBoxLine fontSize={32} />
+                    <Text 
+                        fontSize={24}
+                        fontWeight='bold'
+                    >
+                        Finance.
+                    </Text>
+                </Flex>
                 <Flex
-                    mt={24}
+                    mt={16}
                     justify='center'
                     align='center'
                     flexDir='column'
@@ -59,7 +71,6 @@ export default function Home() {
                         fyoussef@gmail.com
                     </Text>
                 </Flex>
-
                 <Flex
                     flexDir='column'
                     align='center'
@@ -111,18 +122,18 @@ export default function Home() {
                         >
                             Settings
                         </Button>
-                        <Button 
-                            leftIcon={<FaSignOutAlt />}
-                            bg='transparent'
-                            _hover={{
-                                bg: 'blue.400'
-                            }}
-                        >
-                            Sign-out
-                        </Button>
                     </Stack>
+                    <Button 
+                        leftIcon={<FaSignOutAlt />}
+                        bg='transparent'
+                        _hover={{
+                            bg: 'blue.400'
+                        }}
+                        mt='52'
+                    >
+                        Sign-out
+                    </Button>
                 </Flex>
-
             </Box>
 
 
