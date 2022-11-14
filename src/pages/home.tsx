@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <Flex
             bg='gray.900'
-            h='100vh'
+            h='full'
             color='white'
         >
             <Head>
